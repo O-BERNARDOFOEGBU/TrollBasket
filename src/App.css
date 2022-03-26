@@ -1,27 +1,3 @@
-/*First Section*/
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-th,
-td {
-  border: 1px solid #c6c7cc;
-  padding: 10px 15px;
-}
-th {
-  font-weight: bold;
-}
-thead tr th {
-  height: 30px;
-  line-height: 30px;
-
-  /*text-align: left;*/
-}
-tbody td:last-child,
-thead th:last-child {
-  border-right: none !important;
-}
-
 /*First row end*/
 
 .searchContainer {

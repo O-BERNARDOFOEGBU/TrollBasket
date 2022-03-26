@@ -32,7 +32,7 @@ export const Text = styled.div`
 export const SectionedTitle = styled.span`
   margin: 0 0 0 5px;
 `;
-export const Flex = styled.div`
+export const Space = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;

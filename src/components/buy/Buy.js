@@ -23,7 +23,7 @@ import {
   Title,
   Container,
   ContentWrapper,
-  Flex,
+  Space,
   Border,
   TextContainer,
   GridBox,
@@ -84,18 +84,18 @@ const Buy = () => {
         <Container top="0px" bottom="150px">
           <Title>Trollbasket</Title>
           <ContentWrapper>
-            <Flex>
+            <Space>
               <LocationIcon />
               <SectionedTitle> Lagos</SectionedTitle>
               <DropDownIcon />
-            </Flex>
+            </Space>
             <Border />
-            <Flex>
+            <Space>
               <BlueWalletIcon />
               <SectionedTitle>My Orders</SectionedTitle>
-            </Flex>
+            </Space>
             <Border />
-            <Flex
+            <Space
               onClick={() => {
                 navigate("/cart");
               }}
@@ -106,7 +106,7 @@ const Buy = () => {
               </CartCount>
 
               <SectionedTitle>Cart</SectionedTitle>
-            </Flex>
+            </Space>
           </ContentWrapper>
           <Search
             placeholder={"Search Merchbuy"}
@@ -202,12 +202,3 @@ const Buy = () => {
 };
 
 export default Buy;
-
-// const [allProducts, setAllProducts] = useState({});
-
-//   useEffect(() => {
-//     dispatch(addData()).then((res) => {
-//         res && setAllProducts(res);
-//     });
-//     // eslint-disable-next-line react-hooks/exhaustive-deps
-// }, []);

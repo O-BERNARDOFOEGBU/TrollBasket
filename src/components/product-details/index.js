@@ -86,6 +86,7 @@ const ProductDesc = styled.p`
   font-weight: ${({ weight }) => weight || "400"};
   line-height: ${({ lineHeight }) => lineHeight || "21px"};
   margin-left: ${({ left }) => left || "16px"};
+  margin-right: ${({ right }) => right || "16px"};
   margin-top: ${({ top }) => top || "0"};
 `;
 
