@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+/*First Section*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #c6c7cc;
+  padding: 10px 15px;
+}
+th {
+  font-weight: bold;
+}
+thead tr th {
+  height: 30px;
+  line-height: 30px;
+
+  /*text-align: left;*/
+}
+tbody td:last-child,
+thead th:last-child {
+  border-right: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*First row end*/
+
+.searchContainer {
+  display: inline-flex;
+  flex: 1;
+  position: relative;
+  border: 1px solid skyblue;
+  background-color: #edf2f7;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.searchIcon {
+  padding: 10px;
+  size: 2ex;
+}
+
+.searchBox {
+  flex: 1;
+  border: none;
+  margin-top: 10;
+}
+
+/*Create a responsive Carousel*/
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+body h1 {
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.column {
+  float: left;
+  width: 50%;
+  height: 139px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create a responsive, centered, three-column grid. */
+.card-container {
+  margin-top: 50px;
+  align-items: start;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+}
+
+.card-container2 {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.card {
+  color: white;
+  padding: 50 0 0 0;
+  text-align: center;
+  border: none;
+}
+.nav {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: auto;
+}
+
+.nav__link {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 90%;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  margin-top: 20px;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.button2 {
+  background-color: #227eff;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 60px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+.slideshowDots {
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
 }
