@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import styled from "styled-components";
 
-const LayoutWrapper = styled.div`
+const DesktopBackgroundContainer = styled.div`
   position: relative;
   display: flex;
   flex-wrap: nowrap;
@@ -52,14 +52,14 @@ const BlueBackground = styled.div`
 const DesktopLayout = ({ children }) => {
   return (
     <Fragment>
-      <LayoutWrapper>
+      <DesktopBackgroundContainer>
         <Background>
           <DesktopStyledWidth>
             <BlueBackground />
             {children}
           </DesktopStyledWidth>
         </Background>
-      </LayoutWrapper>
+      </DesktopBackgroundContainer>
     </Fragment>
   );
 };

@@ -14,6 +14,7 @@ import { addToCart } from "../../redux/slices/cartSlice";
 import { Title, Text, CartCount } from "../buy/style";
 import { LightButton, Button } from "../style";
 import DesktopLayout from "../desktop-layout";
+import { formatter } from "../currency-formatter";
 
 const Header = styled.div`
   display: flex;
@@ -192,8 +193,6 @@ const ProductDetails = ({ id, data }) => {
   const [showToast, setShowToast] = useState(false);
   const cartItems = useSelector((state) => state.cart.cartContent);
 
-  console.log(cartItems, "obi");
-
   const handleAddToCart = () => {
     setTimeout(() => {
       setShowToast(true);
@@ -204,7 +203,6 @@ const ProductDetails = ({ id, data }) => {
     }, 2000);
   };
 
-  console.log(product);
   return (
     <DesktopLayout>
       <Header>
@@ -247,7 +245,8 @@ const ProductDetails = ({ id, data }) => {
       <ProductDesc>{product.description}</ProductDesc>
       <PriceWrapper>
         <ProductPrice>
-          {`N${product.minPrice} - N${product.maxPrice}`}
+          {formatter.format(product.minPrice)} {" - "}
+          {formatter.format(product.maxPrice)}
         </ProductPrice>
         <Piece>/Piece</Piece>
       </PriceWrapper>

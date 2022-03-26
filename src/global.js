@@ -9,7 +9,7 @@ html, body, #root {
     min-height: 100%;
     background: #FFFFFF;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     padding: 0;
     margin: 0;

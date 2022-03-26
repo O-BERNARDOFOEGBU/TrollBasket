@@ -18,6 +18,7 @@ import { ReactComponent as HomeIcon } from "./assets/home.svg";
 import { ReactComponent as DealsIcon } from "./assets/deals.svg";
 import { ReactComponent as MoreIcon } from "./assets/more.svg";
 import Search from "../search";
+import { formatter } from "../currency-formatter";
 
 import {
   Title,
@@ -51,32 +52,25 @@ const Buy = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [searchValue, setSearchValue] = useState("");
+  const [searchForProduct, setSearchForProduct] = useState("");
   const allProducts = useSelector((state) => state.products.allProducts);
-  const [searchedOptions, setSearchedOptions] = useState(products);
+  const [searchedOptions, setSearchedOptions] = useState(allProducts);
   const cartItems = useSelector((state) => state.cart.cartContent);
-
-  const formatter = new Intl.NumberFormat("en-NG", {
-    style: "currency",
-    currency: "NGN",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  });
-
-  console.log(allProducts);
 
   useEffect(() => {
     dispatch(addProduct(products));
 
-    if (products && products.length > 0 && searchValue) {
+    if (products && products.length > 0 && searchForProduct) {
       const searchResults = products.filter((commodity) =>
-        String(commodity.name).toLowerCase().includes(searchValue.toLowerCase())
+        String(commodity.name)
+          .toLowerCase()
+          .includes(searchForProduct.toLowerCase())
       );
       setSearchedOptions(searchResults);
     } else {
       setSearchedOptions(products);
     }
-  }, [dispatch, searchValue]);
+  }, [dispatch, searchForProduct]);
 
   return (
     <DesktopLayout>
@@ -110,9 +104,9 @@ const Buy = () => {
           </ContentWrapper>
           <Search
             placeholder={"Search Merchbuy"}
-            value={searchValue}
+            value={searchForProduct}
             onChange={(e) => {
-              setSearchValue(e.target.value);
+              setSearchForProduct(e.target.value);
             }}
           />
 

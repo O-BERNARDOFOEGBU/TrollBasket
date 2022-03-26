@@ -17,14 +17,15 @@ export const products = [
   {
     id: "1ads421egjdsc",
 
-    name: "Sony PS4 pad",
+    name: "Samsung A02",
 
-    description: "PlayStation 4 DualShock 4 Wireless Controller",
+    description:
+      "2/32GB Memory, Dual Rear Camera, Dual SIM, 5,000Mah Battery, 4G LTE",
 
-    image: SonyPad,
+    image: Samsung,
 
-    minPrice: 5000,
-    maxPrice: 8000,
+    minPrice: 50000,
+    maxPrice: 80000,
     location: "Lagos",
 
     stock: 350,
@@ -213,14 +214,13 @@ export const products = [
   {
     id: "12ads421egjdsc",
 
-    name: "Samsung A02",
+    name: "Sony PS4 pad",
 
-    description:
-      "2/32GB Memory, Dual Rear Camera, Dual SIM, 5,000Mah Battery, 4G LTE",
+    description: "PlayStation 4 DualShock 4 Wireless Controller",
 
-    image: Samsung,
-    minPrice: 69999,
-    maxPrice: 75000,
+    image: SonyPad,
+    minPrice: 6999,
+    maxPrice: 7500,
 
     location: "Lagos",
 

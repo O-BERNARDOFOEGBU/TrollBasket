@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { TitleWrapper } from "../product-details";
 import styled from "styled-components";
 import { Title } from "../buy/style";
+import { formatter } from "../currency-formatter";
+
 import {
   addToCart,
   subFromCart,
@@ -138,13 +140,6 @@ const Cart = (item) => {
   const handleMinusFromCart = (id) => {
     dispatch(subFromCart(id));
   };
-
-  const formatter = new Intl.NumberFormat("en-NG", {
-    style: "currency",
-    currency: "NGN",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  });
 
   return (
     <DesktopLayout>
