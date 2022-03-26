@@ -117,7 +117,7 @@ const PriceWrapper = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: ${({ gap }) => gap || "55%"};
+  gap: ${({ gap }) => gap || "56%"};
   margin-top: ${({ top }) => top || "0"};
   position: ${({ position }) => position || null};
 `;
@@ -249,7 +249,7 @@ const ProductDetails = ({ id, data }) => {
         <ProductName>Product Description</ProductName>
         <ForwardArrow />
       </Wrapper>
-      <Wrapper gap="42%">
+      <Wrapper gap="44%">
         <ProductName>Review and Ratings</ProductName>
         <ProductName color="#227EFF">View all</ProductName>
       </Wrapper>
