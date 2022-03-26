@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import { Link, useNavigate } from "react-router-dom";
 import Slideshow from "../slideshow/Slideshow";
-// import { ReactComponent as BagIcon } from "./assets/home.svg";
 import { ReactComponent as BlueWalletIcon } from "./assets/blue-wallet.svg";
 import { ReactComponent as CartIcon } from "./assets/cart.svg";
 import { ReactComponent as LocationIcon } from "./assets/bag.svg";

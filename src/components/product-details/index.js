@@ -29,11 +29,6 @@ export const TitleWrapper = styled.div`
   justify-content: center;
 `;
 
-// const CartCount = styled(CartCountSvg)`
-//   margin-left: 16px;
-//   margin-top: 8px;
-// `;
-
 const TopIconWrapper = styled.div`
   display: flex;
   gap: 13px;
@@ -122,7 +117,7 @@ const PriceWrapper = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: ${({ gap }) => gap || "56%"};
+  gap: ${({ gap }) => gap || "55%"};
   margin-top: ${({ top }) => top || "0"};
   position: ${({ position }) => position || null};
 `;
@@ -254,7 +249,7 @@ const ProductDetails = ({ id, data }) => {
         <ProductName>Product Description</ProductName>
         <ForwardArrow />
       </Wrapper>
-      <Wrapper gap="44%">
+      <Wrapper gap="42%">
         <ProductName>Review and Ratings</ProductName>
         <ProductName color="#227EFF">View all</ProductName>
       </Wrapper>
@@ -284,7 +279,6 @@ const ProductDetails = ({ id, data }) => {
             margin={"0 8px 0 0"}
             backgroundColor="#227EFF"
             radius="4px"
-            // zIndex="200"
             onClick={handleAddToCart}
           >
             Add To Cart
@@ -295,7 +289,6 @@ const ProductDetails = ({ id, data }) => {
             top="10px"
             color="#227EFF"
             radius="4px"
-            // onClick={() => setOpenBuynowPopup(true)}
           >
             Wish List
           </LightButton>

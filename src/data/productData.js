@@ -1,7 +1,5 @@
-// import Nike from './assets/Nike.jpg'
 import Nike from "./assets/mercurial.png";
 import SchoolBag from "./assets/school-bag.jpg";
-// import Adidas from "./assets/Adidas.png";
 import HeadPhone from "./assets/headphones.jpg";
 import SonyPad from "./assets/sony-pad.jpg";
 import TurtleNeck from "./assets/turtle-neck.jpg";
@@ -17,20 +15,18 @@ export const products = [
   {
     id: "1ads421egjdsc",
 
-    name: "Samsung A02",
+    name: "Sony PS4 pad",
 
-    description:
-      "2/32GB Memory, Dual Rear Camera, Dual SIM, 5,000Mah Battery, 4G LTE",
+    description: "PlayStation 4 DualShock 4 Wireless Controller",
 
-    image: Samsung,
+    image: SonyPad,
+    minPrice: 6999,
+    maxPrice: 7500,
 
-    minPrice: 50000,
-    maxPrice: 80000,
     location: "Lagos",
 
-    stock: 350,
-
-    moq: 10,
+    stock: 500,
+    moq: 5,
   },
 
   {
@@ -99,7 +95,7 @@ export const products = [
 
     name: "Turtle Neck",
 
-    description: "Coloured Turtle Neck to stand up",
+    description: "Coloured Turtle Neck to stand out",
 
     image: TurtleNeck,
 
@@ -214,17 +210,19 @@ export const products = [
   {
     id: "12ads421egjdsc",
 
-    name: "Sony PS4 pad",
+    name: "Samsung A02",
 
-    description: "PlayStation 4 DualShock 4 Wireless Controller",
+    description:
+      "2/32GB Memory, Dual Rear Camera, Dual SIM, 5,000Mah Battery, 4G LTE",
 
-    image: SonyPad,
-    minPrice: 6999,
-    maxPrice: 7500,
+    image: Samsung,
 
+    minPrice: 50000,
+    maxPrice: 80000,
     location: "Lagos",
 
-    stock: 500,
-    moq: 5,
+    stock: 350,
+
+    moq: 10,
   },
 ];
