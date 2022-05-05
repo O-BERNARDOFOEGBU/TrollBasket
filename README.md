@@ -1,5 +1,5 @@
 # TrollBasket
-A mini shopping App. you can check it out here: https://speedbuywithbernie.netlify.app/
+A mini shopping App https://speedbuywithbernie.netlify.app/
 
 you are welcome to go through the mini app
 
