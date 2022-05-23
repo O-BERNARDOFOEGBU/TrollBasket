@@ -4,10 +4,15 @@ A mini shopping App https://speedbuywithbernie.netlify.app/
 you are welcome to go through the mini app
 
 1.Pick a product
+
 2.add to cart
+
 3.monitor the increasing in count of the cart content
+
 4. click on cart to check content of cart
-5.add and decrease quantity of item 
+
+5. add and decrease quantity of item 
+
 6. checkout.
 
 Give feedback on smoothness of the experience.
